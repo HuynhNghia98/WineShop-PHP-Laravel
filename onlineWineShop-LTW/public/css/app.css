@@ -1,0 +1,693 @@
+:root {
+    --color-red: #e53131;
+    --color-red-hover: #992424;
+    --color-prey: #afafaf;
+}
+
+.text-prey {
+    color: #9c9c9c;
+}
+
+
+.custom-align {
+    margin: auto;
+}
+
+.my-element {
+    background-color: rgb(var(--bs-tertiary-bg-rgb));
+    /* Sử dụng biến Bootstrap */
+
+}
+
+.social {
+    background-color: var(--bs-tertiary-color);
+    border-radius: 1px;
+}
+
+/* rating star */
+/****** Style Star Rating Widget *****/
+#rating {
+    border: none;
+    float: left;
+}
+
+#rating>input {
+    display: none;
+}
+
+/*ẩn input radio - vì chúng ta đã có label là GUI*/
+#rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+/*1 ngôi sao*/
+#rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+/*0.5 ngôi sao*/
+#rating>label {
+    color: #ddd;
+    float: right;
+}
+
+/*float:right để lật ngược các ngôi sao lại đúng theo thứ tự trong thực tế*/
+/*thêm màu cho sao đã chọn và các ngôi sao phía trước*/
+#rating>input:checked~label,
+#rating:not(:checked)>label:hover,
+#rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+#rating>input:checked+label:hover,
+#rating>input:checked~label:hover,
+#rating>label:hover~input:checked~label,
+#rating>input:checked~label:hover~label {
+    color: #FFED85;
+}
+
+/* layout.app -----------------------------------------------------------------*/
+#addbalanceLink:hover,
+#addbalanceLink:hover,
+#myordersLink:hover,
+#infoLink:hover,
+#adminLink:hover {
+    color: var(--color-red);
+}
+
+#navLinkInput:hover {
+    background-color: #f6f6f6;
+    color: var(--color-red);
+}
+
+/* reponsive nav*/
+/* Khi màn hình nhỏ hơn hoặc bằng 768px (tablets và điện thoại) */
+@media (max-width: 900px) {
+
+    .nav-item,
+    ul li a.dropdown-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .link-layout {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+/* top-nav */
+* {
+    font-family: 'National-Regular', sans-serif;
+}
+
+.national-bold {
+    font-family: 'National-Bold', sans-serif;
+}
+
+#top-nav {
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.dropdown-menu {
+    top: 125%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* nav-link hover */
+.nav-link:hover{
+    border-bottom: 3px solid var(--color-red);
+}
+/* dropdown-item hover */
+.dropdown-item:hover {
+    border-bottom: 3px solid var(--color-red);
+    color: var(--color-red);
+}
+/* footer link hover  */
+a.text-decoration-none:hover{
+    border-bottom: 3px solid var(--color-red);
+}
+
+
+/* cart link---------------------------------------------------------------- */
+#cart-link {
+    background-color: var(--color-red);
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 12px;
+    margin-right: 20px;
+}
+
+#cart-link:hover {
+    background-color: var(--color-red-hover);
+}
+
+
+.link-layout {
+    text-decoration: none;
+    color: #000000;
+}
+
+.link-layout:hover {
+    color: var(--color-red);
+}
+
+/* bg-color */
+.bg-blue {
+    background-color: #b4f1ff;
+    position: relative;
+}
+
+.bg-beige {
+    background-color: #F5F5DC;
+}
+
+.bg-prey {
+    background-color: #f9f9f9;
+}
+/* bg-beige -------------------------------------------------*/
+.bg-1 {
+    background-color: #fdf4e9;
+}
+
+.bg-seaShell {
+    background-color: #fff9f5;
+}
+
+
+/* font size */
+.fs-7 {
+    font-size: 15px;
+}
+
+/* border light */
+.custom-border-top-1 {
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+.custom-border-left-1 {
+    border-left: 1px solid rgb(211, 211, 211);
+}
+
+.custom-border-right-1 {
+    border-right: 1px solid rgb(211, 211, 211);
+}
+
+.custom-border-bottom-1 {
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/* border-bold */
+.custom-border-2 {
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.custom-border-top-2 {
+    border-top: 1px solid rgb(50, 50, 50);
+}
+
+.custom-border-bottom-2 {
+    border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+.custom-border-left-2 {
+    border-left: 1px solid rgb(50, 50, 50);
+}
+
+.custom-border-right-2 {
+    border-right: 1px solid rgb(50, 50, 50);
+}
+
+
+.text-red {
+    color: var(--color-red);
+}
+
+.custom-icon-1 {
+    transform: rotate(-30deg);
+}
+
+.custom-icon-2 {
+    transform: rotate(30deg);
+}
+
+.custom-fontstyle-1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* custom-icon */
+.blend-image {
+    mix-blend-mode: darken;
+}
+
+/* searchInput ---------------------------------------------------*/
+@media (min-width: 1460px) {
+    /* màn hình từ >= máy tính */
+    #searchInput,
+    .searchIconSpan,
+    #cart-link {
+        display: block;
+    }
+    #searchInput{
+        width: 600px;
+    }
+    #cart-link-md,
+    #search-sm,
+    #cart-link-sm,
+    #search-md,
+    #signin-sm,
+    #userinfo-sm {
+        display: none;
+    }
+}
+@media (max-width: 1460px) {
+
+    /* màn hình từ >= máy tính */
+    #searchInput,
+    .searchIconSpan,
+    #cart-link {
+        display: block;
+    }
+    #searchInput{
+        width: 500px;
+    }
+
+    #cart-link-md,
+    #search-sm,
+    #cart-link-sm,
+    #search-md,
+    #signin-sm,
+    #userinfo-sm {
+        display: none;
+    }
+}
+@media (max-width: 1360px) {
+
+    /* màn hình từ >= máy tính */
+    #searchInput,
+    .searchIconSpan,
+    #cart-link {
+        display: block;
+    }
+    #searchInput{
+        width: 400px;
+    }
+
+    #cart-link-md,
+    #search-sm,
+    #cart-link-sm,
+    #search-md,
+    #signin-sm,
+    #userinfo-sm {
+        display: none;
+    }
+}
+@media (max-width: 1270px) {
+
+    /* màn hình từ >= máy tính */
+    #searchInput,
+    .searchIconSpan,
+    #cart-link {
+        display: block;
+    }
+    #searchInput{
+        width: 250px;
+    }
+
+    #cart-link-md,
+    #search-sm,
+    #cart-link-sm,
+    #search-md,
+    #signin-sm,
+    #userinfo-sm {
+        display: none;
+    }
+}
+
+@media (max-width: 1110px) {
+    /* màn hình từ < máy tính */
+    #searchInput,
+    .searchIconSpan,
+    #cart-link,
+    #search-sm,
+    #cart-link-sm,
+    #signin-sm,
+    #userinfo-sm {
+        display: none;
+        /* Ẩn div khi điều kiện được đáp ứng */
+    }
+
+    #cart-link-md,#search-md {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    /* màn hình từ dien thoai */
+    #searchInput,
+    .searchIconSpan,
+    #cart-link,
+    #cart-link-md,
+    #search-md,
+    #signin,
+    #userinfo {
+        display: none;
+    }
+
+    #cart-link-sm,
+    #search-sm,
+    #signin-sm,
+    #userinfo-sm {
+        display: block;
+    }
+}
+
+/* search-md */
+#search-md,#search-sm{
+    position: relative;
+}
+#search-md-ul.active,#search-sm-ul.active {
+    display: block;
+}
+
+#search-md-ul,#search-sm-ul {
+    display: none;
+    /* Ban đầu ẩn đi */
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom: 3px solid var(--color-red) ;
+}
+#search-md-li,#search-sm-li {
+    padding: 13px 16px;
+}
+
+/* search */
+#searchInput {
+    background-color: rgb(246, 246, 246);
+    height: 47px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding: 0 15px;
+}
+
+#searchInput::placeholder {
+    color: rgb(198, 198, 198);
+}
+
+#searchInput:focus {
+    outline: none;
+    border: none;
+}
+
+.searchIconSpan {
+    background-color: rgb(246, 246, 246);
+    padding: 10px 19px;
+    width: 40px;
+    height: 47px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+#clearBtn:hover {
+    background-color: rgb(213, 213, 213);
+    cursor: pointer;
+}
+
+/* dropdown */
+#myUL,
+#myUL-md,#myUL-sm {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 47px;
+    position: absolute;
+    width: 100%;
+    /* Chiều rộng bằng input */
+    max-height: 550px;
+    overflow-y: auto;
+    /* Hiển thị thanh cuộn nếu danh sách dài */
+    overflow-x: hidden;
+    background-color: white;
+    z-index: 1;
+    /* Đảm bảo ul nằm trên các phần tử khác */
+    display: none;
+    /* Ẩn danh sách ban đầu */
+    border-bottom: 5px solid var(--color-red-hover);
+}
+#myUL-md,#myUL-sm {
+    top: 30%;
+}
+
+#myUL li,
+#myUL-md li,#myUL-sm li {
+    height: 110px;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+#myUL li a,
+#myUL-md li a,#myUL-sm li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#myUL li a:hover,
+#myUL-md li a:hover,
+#myUL-sm li a:hover {
+    background-color: rgb(213, 213, 213);
+    color: rgb(255, 111, 0);
+}
+
+#productCount {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a60707;
+    color: white;
+    font-weight: bold;
+    padding: 3px 10px;
+    margin: 0;
+}
+
+.nameProducts {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100px;
+    max-height: 100px;
+}
+
+/* login layout ----------------------------------*/
+#logoId {
+    width: 100px;
+    height: 90px;
+}
+
+#imgCheers {
+    width: 100%;
+}
+
+#email,
+#password {
+    width: 100%;
+    padding: 15px 14px;
+    border-radius: 5px;
+    border: 2px solid rgb(174, 174, 174);
+}
+
+#backLink {
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    padding-top: 10px;
+    border: 1px solid rgb(42, 42, 42);
+    color: rgb(42, 42, 42);
+    font-size: 20px;
+}
+
+#backLink:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+#loginSubmitBtn,
+#registerSubmitBtn {
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-red);
+    color: white;
+    font-size: 20px;
+}
+
+#loginSubmitBtn:hover {
+    background-color: var(--color-red-hover);
+}
+
+#forgotPassLink {
+    color: var(--color-red);
+    text-decoration: none;
+    text-align: center;
+}
+
+.form-floating {
+    position: relative;
+}
+
+.form-floating label {
+    position: absolute;
+    top: -50px;
+    /* Điều chỉnh vị trí top theo mong muốn */
+    left: 10px;
+    /* Điều chỉnh vị trí left theo mong muốn */
+    font-size: 20px;
+    /* Điều chỉnh kích thước font của label */
+    padding: 0;
+    color: #a9a9a9;
+    margin-top: 7px;
+    /* Tùy chỉnh padding của label */
+    pointer-events: none;
+    /* Ngăn label nhận sự kiện click */
+    transition: 0.2s;
+}
+
+.form-floating input:focus+label,
+.form-floating input:valid+label {
+    top: -5px;
+    left: 0;
+    margin-top: 0;
+    transition: all 0.2s;
+    font-size: 13px;
+    /* Tùy chỉnh kích thước font của label khi nó lên trên */
+    background-color: transparent;
+    /* Để label trở nên trong suốt khi input được focus hoặc đã có giá trị */
+}
+
+.form-floating textarea:focus+label,
+.form-floating textarea:valid+label {
+    top: 20px;
+    left: 0;
+    margin-top: 0;
+    transition: all 0.2s;
+    font-size: 13px;
+    /* Tùy chỉnh kích thước font của label khi nó lên trên */
+    background-color: transparent;
+}
+
+/* customer.home.index---------------------------------------------------------- */
+#viewallInput:focus {
+    border: none;
+    outline: none;
+}
+
+#tag {
+    background-color: #F7E7CE;
+    color: black;
+    padding: 2px 1px;
+    width: 55%;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#untag {
+    margin-top: 28px;
+    margin-bottom: 27px;
+}
+
+
+
+/* customer.product.detail--------------------------------------------------------- */
+#adtocartBtn {
+    font-weight: bold;
+    border: none;
+    padding: 16px 15px;
+    background-color: var(--color-red);
+}
+
+#adtocartBtn:hover {
+    background-color: var(--color-red-hover);
+}
+
+#detaillink {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #6f6f6f;
+}
+
+#detaillink:hover {
+    color: var(--color-red);
+}
+
+#submitReview {
+    background-color: var(--color-red);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#cancelReview {
+    color: var(--color-red);
+    padding: 15px 25px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#addtocartLink {
+    width: 100%;
+    background-color: var(--color-red);
+}
+
+#addtocartLink:hover {
+    background-color: var(--color-red-hover);
+}
+
+#labelDisableName,
+#labelDisableEmail {
+    font-size: 13px;
+    top: -10%;
+}
+
+.form-check-label:hover {
+    border-bottom: 3px solid var(--color-red);
+}
+.custom-radio:checked {
+    content: "\2713"!important;
+    background-color: var(--color-red)!important;
+    border-color: var(--color-red)!important; 
+    color: var(--color-red)!important;
+}

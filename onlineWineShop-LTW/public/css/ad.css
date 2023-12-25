@@ -1,0 +1,177 @@
+html{
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .row.mt-5, .row.my-3  {
+   margin:0 auto;
+  
+  }
+  .col {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 25%;
+  }
+  
+  .widget-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 2px;
+    color: #FFF;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 150px;
+    position: relative;
+  }
+  
+  .widget-small .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 85px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px 0 0 2px;
+    font-size: 2.5rem;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .widget-small .info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 20px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  
+  .widget-small .info h4 {
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #d20000;
+    font-size: 25px;
+  }
+  
+  .widget-small .info p {
+    margin: 0;
+    font-size: 17px;
+  }
+  
+  .widget-small.primary {
+    background-color: rgb(0, 28, 64);
+  }
+  
+  .widget-small.primary.coloured-icon {
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: .375rem;
+    padding: 10px;
+    
+  }
+  
+  .widget-small.primary.coloured-icon .icon {
+    background-color: #b9ffd3;
+    color: #22ad56;
+    border-radius: .375rem;
+    width: 40%;
+    font-size:75px ;
+  }
+  
+  .widget-small.info {
+    background-color: #17a2b8;
+  }
+  
+  .widget-small.info.coloured-icon {
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: .375rem;
+    padding: 10px;
+  }
+  
+  .widget-small.info.coloured-icon .icon {
+    background-color: #adcbf3;
+    color: #1d5aab;
+    border-radius: .375rem;
+    width: 40%;
+    font-size:75px ;
+  }
+  
+  .widget-small.warning {
+    background-color: #ffc107;
+  }
+  
+  .widget-small.warning.coloured-icon {
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: .375rem;
+    padding:10px;
+  }
+  
+  .widget-small.warning.coloured-icon .icon {
+    background-color: #fde1c3;
+    color: #ff8b07;
+    border-radius: .375rem;
+    width: 40%;
+    font-size:75px ;
+  }
+  
+  .widget-small.danger {
+    background-color: #dc3545;
+  }
+  
+  .widget-small.danger.coloured-icon {
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: .375rem;
+    padding:10px;
+  }
+  
+  .widget-small.danger.coloured-icon .icon {
+    background-color: #f9baba;
+    color: #de2222;
+    border-radius: .375rem;
+    width: 40%;
+    font-size:75px ;
+  }
+  .info-tong{
+    font-size: 12px !important;
+    margin-top: 5px !important;
+    border-top: 1px dashed #e8e8e8;
+    padding-top: 10px !important;}
+  
+    /* Sử dụng media query để thiết lập kích thước cho phần tử trên màn hình nhỏ hơn */
+  @media (max-width: 768px) {
+    .widget-small {
+      /* Đặt chiều rộng và các thuộc tính khác ở đây */
+      width: 100%; /* Ví dụ, làm cho phần tử chiếm toàn bộ chiều rộng */
+      /* Thêm bất kỳ điều chỉnh nào khác cho kích thước hoặc bố cục */
+    }
+  
+    /* Để điều chỉnh icon và văn bản bên trong phần tử */
+    .widget-small .icon {
+      font-size: 2rem; /* Điều chỉnh kích thước của icon */
+    }
+    
+    .widget-small .info h4 {
+      font-size: 1rem; /* Điều chỉnh kích thước của tiêu đề */
+    }
+  
+    /* Thêm bất kỳ điều chỉnh nào khác cho nội dung bên trong phần tử */
+  }
+  
+  .nav-link.active{
+    color: #6c757d;
+  }  
