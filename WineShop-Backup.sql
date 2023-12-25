@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 25, 2023 at 07:06 PM
+-- Generation Time: Dec 25, 2023 at 07:17 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -328,17 +328,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `role`, `balance`) VALUES
-(1, 'nghiadeptraiadmin', 'nghiadeptraiadmin@gmail.com', NULL, '$2y$10$6JmYeb21YAmUF3wAE2CSUuzJmkDBIQ4EIsv8wH6kfNAa2z9xzC5W.', NULL, '0000-00-00 00:00:00', '2023-09-27 18:47:21', 'admin', 98285),
+(1, 'nghiaadmin', 'nghiaadmin@gmail.com', NULL, '$2y$10$6JmYeb21YAmUF3wAE2CSUuzJmkDBIQ4EIsv8wH6kfNAa2z9xzC5W.', NULL, '0000-00-00 00:00:00', '2023-09-27 18:47:21', 'admin', 98285),
 (2, 'Huynh Nghia', 'nghia@gmail.com', NULL, '$2y$10$xJu2S8.fvvTpI2SeTD0/.O3KWZb.ap.v0rSsleI6Ol4ygcta46vqS', NULL, '0000-00-00 00:00:00', '2023-09-27 06:36:39', 'client', 10043),
-(3, 'nghia1', 'nghia1@gmail.com', NULL, '$2y$10$n2ApS23EUCKtju58m3kSjexw72LvoRrZ4ESZuW1IBbAQRzN/h0wAC', NULL, '2023-09-25 07:26:33', '2023-09-25 07:26:33', 'client', 10000),
-(4, 'nghia2', 'nghia2@gmail.com', NULL, '$2y$10$PNoHygenBr/W2.ZvNHcSyOZbHFwgSIXdMKbjjW4CRH328F5d52pK2', NULL, '2023-09-25 07:27:03', '2023-09-25 07:27:03', 'client', 10000),
-(5, 'nghia3', 'nghia3@gmail.com', NULL, '$2y$10$PnaI3DCVOvFDMjwHZ3BbL.by6T1X9UYvE924J6iqiri5mSm5NpWMW', NULL, '2023-09-25 07:27:35', '2023-09-25 07:27:35', 'client', 10000),
-(6, 'nghia4', 'nghia4@gmail.com', NULL, '$2y$10$ZK2/7NzUrE1YC0QFqXVx8.LBobzkwKl9pa8l3ye38Exwzze.Vd5My', NULL, '2023-09-25 07:28:05', '2023-09-25 07:28:05', 'client', 10000),
-(7, 'nghia5', 'nghia5@gmail.com', NULL, '$2y$10$tgFW9OtBJXJRCejBz3Me3.mIc6ED6rViOtJ5thkXRZGaCqiyCCtUK', NULL, '2023-09-25 07:28:34', '2023-09-25 07:28:34', 'client', 10000),
-(8, 'nghia6', 'nghia6@gmail.com', NULL, '$2y$10$soVCwb8BFsus0BQlsVigv.QILQeODltRyb7qMrTmSMc2kHc7JEPt6', NULL, '2023-09-25 07:29:12', '2023-09-25 07:29:12', 'client', 10000),
-(9, 'nghia7', 'nghia7@gmail.com', NULL, '$2y$10$Vb1UjVyE.7ttIhZd4Cmgi.Zb.SUkMRpAYLUesweKJQLGzXIx63NaW', NULL, '2023-09-25 07:29:34', '2023-09-25 07:29:34', 'client', 10000),
-(10, 'nghia8', 'nghia8@gmail.com', NULL, '$2y$10$BROLl.1fuXWzDFUBOEolbOxLPxu.EQEpEMt8Xcfl9QzWppSpLvFGO', NULL, '2023-09-25 07:29:56', '2023-09-25 07:29:56', 'client', 10000),
-(11, 'nghia10', 'nghia10@gmail.com', NULL, '$2y$10$6eneRdHnsHg3duSuLsIWseVhL7yP/jAQFoio3O9HQJM8aVNZMmERe', NULL, '2023-09-27 17:38:48', '2023-09-27 17:38:48', 'client', 10000);
+(3, 'nghia1', 'nghia1@gmail.com', NULL, '$2y$10$n2ApS23EUCKtju58m3kSjexw72LvoRrZ4ESZuW1IBbAQRzN/h0wAC', NULL, '2023-09-25 07:26:33', '2023-09-25 07:26:33', 'client', 10000);
 
 --
 -- Indexes for dumped tables
